@@ -9,15 +9,21 @@ const obj2 = {
 };
 
 //  !   Answer:
-const { id, age, username, skills } = obj2;
+// const { id, age, username, skills } = obj2;
 
-const newObj = {
-  id: "newId",
-  age: 21,
-  username,
-  skills: ["python", "css", "js"],
-};
+// const newObj = {
+//   id: "newId",
+//   age: 21,
+//   username,
+//   skills: ["python", "css", "js"],
+// };
 
-console.log(newObj);
+// console.log(newObj);
 
+///////////////////////////////////// or
 
+let { id, age, username, skills } = obj2;
+age = 32;
+obj2.age = age;
+skills[2] = "C++";
+console.log(obj2);
